@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --foreground: #000;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-start: #F0EAD2;
+    --background-end: #FFF;
+    --primary: #ADC178;
+    --secondary: #6C584C;
+    --tertiary: #57613C;
+    --padding-left: 80px;
+    --padding-left-buffered: 102px;
+    --max-width: 520px;
+    --max-width-stat: 400px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--padding-left);
+    text-align: center;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--foreground);
+    font-size: medium;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.loginContainer {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    background-color: var(--foreground);
+    color: var(--background-end);
+    padding: 8px 24px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Plus Jakarta Sans';
+    color: rgb(var(--foreground));
+    background: linear-gradient(to bottom,
+            transparent,
+            rgb(var(--background-end))) rgb(var(--background-start));
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    height: 100%;
+    padding-left: var(--padding-left-buffered);
+}
+
+.heroHeader {
+    font-size: xx-large;
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 12px;
+    letter-spacing: 8px;
+}
+
+.heroText {
+    max-width: var(--max-width);
+}
+
+.heroImageContainer {
+    position: relative;
+    flex: 1;
+}
+
+.heroImage {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.explore {
+    background-color: var(--primary);
+    color: var(--background-end);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 52px;
+    text-align: center;
+    max-width: 248px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: var(--tertiary);
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: var(--max-width-stat);
+    padding: 40px 0;
+}
+
+.stat {
+    color: var(--tertiary);
+}
+
+footer {
+    display: none;
+    flex: 0 1 40px;
+}
