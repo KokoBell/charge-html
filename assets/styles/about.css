@@ -1,0 +1,12 @@
+.about
+{
+    word-spacing: 4px;
+    margin: 8px 0;
+}
+
+.illustration {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: -25%;
+}
