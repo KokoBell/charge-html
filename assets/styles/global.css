@@ -98,9 +98,16 @@ main {
 .header {
     font-size: xx-large;
     font-weight: 800;
-    color: var(--secondary);
     line-height: 12px;
     letter-spacing: 8px;
+}
+
+.brown {
+    color: var(--secondary);
+}
+
+.darkGreen {
+    color: var(--tertiary)
 }
 
 .headerText {
