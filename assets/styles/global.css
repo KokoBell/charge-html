@@ -11,10 +11,13 @@
     --primary: #ADC178;
     --secondary: #6C584C;
     --tertiary: #57613C;
+    --brown: #A98467;
     --padding-left: 80px;
     --padding-left-buffered: 98px;
     --max-width: 520px;
     --max-width-stat: 400px;
+    --box-radius: 12px;
+    --input-radius: 4px;
 }
 
 html,
@@ -85,8 +88,11 @@ main {
     flex-direction: row;
     flex: 1 1 auto;
     overflow: hidden;
-    position: relative;
     width: 100%;
+}
+
+.relative {
+    position: relative;
 }
 
 .hero {
@@ -116,6 +122,10 @@ main {
 .headerText {
     max-width: var(--max-width);
     font-weight: 600;
+}
+
+.textMiddle {
+    text-align: center;
 }
 
 .cta {

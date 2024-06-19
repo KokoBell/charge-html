@@ -1,3 +1,83 @@
+main {
+    justify-content: center;
+    align-items: center;
+}
+
 .brownBackground {
     background-color: var(--secondary);
+}
+
+.creamBackground {
+    background-color: var(--background-start);
+}
+
+.greenBackground {
+    background: linear-gradient(0deg, #ADC178, #ADC178), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    height: 82%;
+    width: 86%;
+    border-radius: var(--box-radius);
+    z-index: 40;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    z-index: 50;
+    border-radius: var(--box-radius);
+    padding: 0 32px;
+}
+
+.lightBrown {
+    color: var(--brown);
+}
+
+.emailForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    position: relative;
+}
+
+.emailText {
+    max-width: var(--max-width);
+    font-weight: 600;
+    font-size: smaller;
+    margin-top: 12px;
+}
+
+.input {
+    height: 24px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--input-radius);
+    padding-left: 12px;
+    border-color: gray;
+}
+
+.textarea {
+    border-radius: var(--input-radius);
+    border-color: gray;
+    height: 60px;
+}
+
+label {
+    position: relative;
+}
+
+label::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    top: -5px;
+    border-radius: 50%;
+    position: relative;
+    background: red;
+    display: inline-block;
 }
