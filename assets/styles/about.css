@@ -1,5 +1,4 @@
-.about
-{
+.about {
     word-spacing: 4px;
     margin: 8px 0;
 }
@@ -7,8 +6,7 @@
 .illustration {
     flex: 1;
     position: absolute;
-    right: 0;
-    height: 100%;
+    right: -3%;
     max-width: 60%;
     top: -25%;
 }
