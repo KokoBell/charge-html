@@ -71,7 +71,7 @@ label {
     position: relative;
 }
 
-label::after {
+label:not(:nth-child(7))::after {
     content: '';
     width: 4px;
     height: 4px;
@@ -80,4 +80,11 @@ label::after {
     position: relative;
     background: red;
     display: inline-block;
+}
+
+.contactImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
