@@ -1,6 +1,9 @@
 :root {
     --shop-max-width: 400px;
     --shop-padding-left: 160px;
+    --ice-pink: #FA3F73;
+    --ice-yellow: #F9CD21;
+    --ice-brown: #A6623C;
 }
 
 body {
@@ -26,16 +29,39 @@ main {
 
 .shopNav a {
     content: '';
-    padding: 1px 4%;
     height: 1px;
     width: 1px;
     border-radius: 100%;
-    background-color: var(--tertiary);
     text-decoration: none;
 }
 
 .shopNav a:not(:first-child) {
     margin-left: 80px;
+}
+
+.clicked {
+    padding: 1px 10px;
+}
+
+.icecream-1.clicked {
+    background-color: var(--tertiary);
+}
+
+.icecream-2.clicked {
+    background-color: var(--ice-pink);
+}
+
+.icecream-3.clicked {
+    background-color: var(--ice-yellow);
+}
+
+.icecream-4.clicked {
+    background-color: var(--ice-brown);
+}
+
+.notClicked {
+    background-color: gray;
+    padding: 1px 10px;
 }
 
 .shopContainer {
