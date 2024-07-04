@@ -105,12 +105,12 @@ function updateFavicon() {
 
     // If the favicon link element exists, update its href attribute
     if (favicon) {
-        favicon.href = "assets/favicon.ico";
+        favicon.href = "../assets/favicon.ico";
     } else {
         // If the favicon link element doesn't exist, create a new one
         const newFavicon = document.createElement('link');
         newFavicon.rel = "icon";
-        newFavicon.href = "assets/favicon.ico";
+        newFavicon.href = "../assets/favicon.ico";
         document.head.appendChild(newFavicon);
     }
 }
