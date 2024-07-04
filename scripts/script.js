@@ -26,7 +26,7 @@ charge_logo.setAttribute(hrefAttr, 'index.html')
 
 charge_logo.setAttribute(classAttr, navCss)
 
-charge_logo.innerHTML = '<img alt="Logo for the Charge ice-cream sales website." src="assets/charge_logo.webp" height="32" />'
+charge_logo.innerHTML = '<img alt="Logo for the Charge ice-cream sales website." src="../assets/charge_logo.webp" height="32" />'
 
 navBar.appendChild(charge_logo)
 

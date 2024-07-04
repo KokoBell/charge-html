@@ -12,3 +12,19 @@ for (let i = 0; i < shopNavChildren.length; i++) {
         shopNavChildren[i].classList.replace('notClicked', 'clicked')
     })
 }
+
+const shopNavLinks = document.querySelectorAll('.shopNav a');
+
+shopNavLinks.forEach(link => {
+  link.addEventListener('click', handleShopNavLinkClick);
+});
+
+function handleShopNavLinkClick(event) {
+  event.preventDefault(); // Prevent default link behavior (jumping)
+
+  const targetElementId = `${event.target.getAttribute('href')}`; // Get target ice cream section ID
+
+  document.querySelector(targetElementId).scrollIntoView({
+    behavior: 'smooth',
+  });
+}
