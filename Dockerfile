@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy all html files to nginx default public directory
-COPY *.html /usr/share/nginx/html/
+COPY src/*.html /usr/share/nginx/html/
 
 # Create a directory for assets and copy them
 RUN mkdir /usr/share/nginx/html/assets
@@ -17,7 +17,8 @@ COPY assets/styles/contact.css /usr/share/nginx/html/assets/styles/
 COPY assets/styles/about.css /usr/share/nginx/html/assets/styles/
 
 # Copy script.js to assets directory
-COPY script.js /usr/share/nginx/html/assets/
+COPY scripts/script.js /usr/share/nginx/html/assets/
+COPY scripts/shop.js /usr/share/nginx/html/assets/
 
 # Expose port 80
 EXPOSE 80
