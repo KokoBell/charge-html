@@ -56,8 +56,6 @@ main {
     max-width: var(--max-width);
     font-weight: 600;
     font-size: smaller;
-    margin-top: 12px;
-    text-align: center;
 }
 
 .input {
@@ -108,4 +106,5 @@ label:not(:nth-child(2))::after {
     align-items: center;
     justify-content: center;
     width: 100%;
+    border-radius: var(--box-radius);
 }
