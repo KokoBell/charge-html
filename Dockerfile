@@ -10,6 +10,7 @@ COPY assets/* /usr/share/nginx/html/assets/
 
 # Create a directory for styles and copy them
 RUN mkdir /usr/share/nginx/html/assets/styles
+COPY assets/styles/login.css /usr/share/nginx/html/assets/styles/
 COPY assets/styles/index.css /usr/share/nginx/html/assets/styles/
 COPY assets/styles/global.css /usr/share/nginx/html/assets/styles/
 COPY assets/styles/shop.css /usr/share/nginx/html/assets/styles/
