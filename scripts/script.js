@@ -84,7 +84,7 @@ loginContainer.appendChild(shopIcon)
 // Login button
 let login = document.createElement('a')
 
-login.setAttribute(hrefAttr, '#')
+login.setAttribute(hrefAttr, 'login.html')
 
 login.setAttribute(classAttr, 'navLink darkShadow login')
 

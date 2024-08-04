@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/login.css">
+    <link rel="stylesheet" href="assets/styles/global.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Charge</title>
+</head>
+
+<body>
+    <main class="brownBackground">
+        <div class="loginDiv creamBackground">
+            <div class="half">
+                <h1 class="loginHeader textMiddle lightBrown">
+                    WELCOME BACK!
+                </h1>
+                <p class="loginText">
+                    Enter your credentials to log into your account and continue
+                </p>
+                <form class="loginForm">
+                    <label for="username" class="emailText">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" class="input creamBackground" required>
+                    <label for="password" class="password" required>Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" class="input creamBackground" required>
+                    <div class="options">
+                        <input type="checkbox" name="remember">
+                        <label for="forgot" class="remember">Remember me</label>
+                        <a href="#" class="forgot">Forgot password?</a>
+                    </div>
+                    <button type="button" class="cta bg-primary">
+                        Login
+                    </button>
+                </form>
+            </div>
+            <div class="greenBackground loginImage">
+                <img src="assets/chef.svg" alt="Chef" width="80%%">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
