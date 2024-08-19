@@ -98,28 +98,29 @@ main {
 .icecream-1-image {
     position: absolute;
     right: 6%;
-    top: 10%;
+    bottom: 80px;
     z-index: 0;
+    max-height: 800px;
 }
 
 .icecream-2-image {
     position: absolute;
     right: 8%;
-    top: 0;
+    bottom: 80px;
     z-index: 0;
 }
 
 .icecream-3-image {
     position: absolute;
     right: 8%;
-    top: -4%;
+    bottom: 80px;
     z-index: 0;
 }
 
 .icecream-4-image {
     position: absolute;
     right: 8%;
-    top: 0;
+    bottom: 80px;
     z-index: 0;
 }
 
